@@ -1,0 +1,59 @@
+.newsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 5rem 0;
+}
+
+.newsCard {
+  flex: 1 0 40%;
+  position: relative;
+  padding: 1rem;
+}
+
+.newsTitle {
+  padding-bottom: 0 !important;
+}
+
+.newsContent {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.clamp-lines__button {
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+.properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.newsSource {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 720px) {
+  .newsContainer {
+    padding: 1rem;
+  }
+
+  .newsCard {
+    flex: 1 0 100%;
+  }
+
+  .newsTitle {
+    font-size: 1.2rem;
+  }
+}
